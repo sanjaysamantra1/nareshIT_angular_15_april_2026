@@ -1,0 +1,83 @@
+Types Of Javascript
+====================
+1. Internal Javascript
+   <script></script>   Page Level
+
+2. External Javascript  ( Application/Project Level )
+   a. create a Separate .js file and write javascript code 
+   b. include that .js file in HTML file using <script>
+
+
+
+Question: What is the right place to include extrnal javascript files? 
+
+When <script>  is included in <head>, by the time javascript is executed, HTML Elements are still not available in the DOM.
+
+when <script>  is included in <body>, it ensures that the javascript gets executed only after all the DOM Elements are ready.
+
+
+Eliminate Render-Blocking JavaScript
+====================================
+-With HTML5, we got two new boolean attributes for the <script> tag : async and defer.
+ ex:- <script src='demo.js' async/defer></script>
+-async/defer attribute should only be used on external scripts, not with internal scripts.
+-These attributes only make sense while using the script in the head portion of the page.
+-async attribute ensures that the JavaScript file is loaded asynchronously in the background and does not block rendering.
+-defer attribute tells the browser to run the script after the document has been parsed
+-With async, the file gets downloaded asynchronously and then executed as soon as it’s downloaded.
+-With defer, the file gets downloaded asynchronously, but executed only when the document parsing is completed.
+-With defer, scripts will execute in the same order as they are called. 
+ defer is useful when a script depends on another script.
+ https://flaviocopes.com/javascript-async-defer/
+
+
+
+ Where Javascript Code Can be executed
+ ======================================
+ 1. Browser ( FrontEnd Development )
+    a. create a Separate .js file and write javascript code 
+    b. include that .js file in HTML file using <script>
+    c. open HTML File in browser ( alt+b )
+
+ 2. NodeJS  ( BackEnd Development )
+    a. create a Separate .js file and write javascript code (addition.js)
+    b. run the javascript file with the below command
+        node <filename>.js
+
+
+Note: Every Javascript code that runs on browser will not work in nodejs
+      Every Javascript code that runs on nodejs will not work in browser
+
+
+Javascript Objects/Modules
+==========================
+Both Browser & Nodejs : console, Math , Array , Object, Number, JSON
+
+Only Browser,Not NodeJS: document , window
+
+only NodeJS ,not Browser : fs, os, http, url, crypto
+
+
+
+Most Commonly Used Javascript Objects/Classes
+=============================================
+console : log(), warn(), error(), table(), dir(), time(), timeEnd()
+window : alert(), confirm(), prompt(), atob(), btoa()
+document : write(), getElementById(), querySelector()
+Math : max(), min(), sqrt()
+Array : push(), pop(), slice(), shift(), map(), filter()
+JSON : stringify(), parse()
+Object : keys(), values(), entries(), groupBy()
+
+window methods
+===============
+1.  alert() - display Message  
+			 (message + ok)
+2.  confirm()- User Confirmation 
+			  ( message + ok-true,cancel-false)
+3.  prompt()- Collect User Input  
+			  (message + inputBox + ok,cancel)
+
+Note: window object methods can be direcly used also.
+     window.alert(); // valid
+     alert();        // valid              

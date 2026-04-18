@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="myTitle">Let's Understand Document Object</h1>
+    <h2 class="myClass">DOM : Document Object Model</h2>
+    <h3 class="myClass">DOM : Represents the Page as Tree of Nodes</h3>
+    <h3>DOM : Maintains the elements as tree of Nodes</h3>
+
+    <script>
+        document.getElementById('myTitle').style.color = 'red';
+
+        document.getElementsByClassName('myClass')[0].style.backgroundColor = 'green';
+
+        document.querySelector('h3').style.border = '5px dashed blue';
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+document : write(), getElementById(), getElementsByClassName(), querySelector
+
+
+
+Datatypes
+=========
+-Type of data
+
+2 Types : Primitive , non-Primitive
+
+
+Primitives:
+    number : 4 , 4.5 , -2.3 
+    string : 'nareshIT' , '10' , 'true'
+    boolean : true / false
+    undefined : undefined
+    bigint
+    symbol
+non-Primitive:
+    Object : {}   []
+
+
+
+undefined vs null
+=================
+1. when a variable is declared without any value, javascript assigns 'undefined' value 
+2. null is an intentional value, assigned by developers
+3. typeof undefined is undefined, typeof null is object
+
+
+Question:
+typeof null is 'object' , is it a non-primitive value?
+Ans: No
+
+Note: primitives are compared by value, non-primitives are compared by address
+
+
+
+JavaScript : Programming Language, Follows ECMAScript Standards
+ECMA :   European Computer Manufacturers Association
+ECMAScript : Set of Standards, Followed By Javascript
+
+
+ES_5    <=  June 2015
+ES_6    2015 ( const, let, class, extends, module, arrow, Map, Set )
+ES_7    2016
+ES_8    2017
+ES_9    2018
+ES_10   2019
+ES_11   2020
+ES_12   2021
+ES_13   2022
+ES_14   2023
+ES_15   2024
+ES_16   2025
+
+
+
+Variables
+=========
+-Memory Locations where data value can be stored.
+-Variables can be declared using:
+    1. var
+    2. let
+    3. const
+
+
+    var						let						 const
+======================================================================
+1.since begining		 1.ECMASCRIPT-6(2015)		1.ECMASCRIPT-6(2015)
+2.value can be changed   2.value can be changed     2.cann't be changed
+3.initialization is		 3.initialization is		3.mandatory
+	not mandatory           not mandatory	
+4.can be redeclared		 4.cann't be redeclared		4.cann't be redeclared
+5.function/global		 5.block/function/global	5.block/function/global
+6.TDZ - No			 	 6.TDZ - Yes				6.TDZ - Yes

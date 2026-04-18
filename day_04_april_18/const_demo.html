@@ -1,0 +1,14 @@
+<script>
+    var a = 10;
+    console.log(`a: ${a}`); // 10
+    a = 100;  // yes
+    console.log(`a: ${a}`); // 100
+
+    const cars = ['Tata', 'Honda'];
+    cars.push('Maruti');
+    delete cars[1];
+    console.log(cars);
+    cars = []; // Assignment to constant variable
+
+    // when array/objects are declared using const, value updatation is still allowed
+</script>

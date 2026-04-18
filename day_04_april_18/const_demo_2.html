@@ -1,0 +1,10 @@
+<script>
+    const obj = { a: 10, b: 20 };
+    obj.a = 15;   // update value - yes
+    delete obj.b; // delete a property - yes
+    obj.c = 30;   // add a new property - Yes
+    console.log(obj); // {a: 15, c: 30}
+
+    obj = {};   // Error
+    // when array/objects are declared using const, value updatation is still allowed
+</script>

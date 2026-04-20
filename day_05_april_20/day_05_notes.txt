@@ -1,0 +1,42 @@
+    var						let						 const
+======================================================================
+1.since begining		 1.ECMASCRIPT-6(2015)		1.ECMASCRIPT-6(2015)
+2.value can be changed   2.value can be changed     2.cann't be changed
+3.initialization is		 3.initialization is		3.mandatory
+	not mandatory           not mandatory	
+4.can be redeclared		 4.cann't be redeclared		4.cann't be redeclared
+5.function/global		 5.block/function/global	5.block/function/global
+6.TDZ - No			 	 6.TDZ - Yes				6.TDZ - Yes
+
+
+
+Variable Scopes
+===============
+1. Global : variables declared outside functions, they can be used by any of the functions.
+2. Function : variables declared inside a function, can be accessed by that function only
+3. Block : variables declared inside a block, can be accessed by that block only
+
+
+
+Strict Mode
+============
+-in strict mode variable declaration without var/let/const is not allowed.
+-in strict mode, function with duplicate param is not allowed.
+
+
+
+Hoisting
+========
+-behavior of moving declarations to the top of the scope during compilation.
+-creating memory location for variables during compilation phase.
+-During Compilation phase for all(var/let/const) variables memory is created.
+
+
+
+Temporal Dead Zone
+==================
+-even though let & const variables are hoisted( memory gets created during compilation)
+ we cannot access those variables as slong as actual values are not initialized,
+
+-
+

@@ -1,0 +1,22 @@
+<script>
+    // var doesn't have block scope
+    function varTest() {
+        if (true) {
+            var coursename = 'Angular'; // it's scope is not block scoped
+            console.log('inside block: ', coursename);
+        }
+        console.log('outside block: ', coursename);
+    }
+    varTest();
+    // 'coursename' variable which is declared inside a block but visible outside the block
+
+
+    function letTest() {
+        if (true) {
+            let address = 'Hyderabad'; // its a block scoped variable
+            console.log('inside block: ', address);
+        }
+        console.log('outside block: ', address);
+    }
+    letTest();
+</script>

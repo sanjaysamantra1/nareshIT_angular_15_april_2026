@@ -1,0 +1,31 @@
+<script>
+    // Global Scope VS Function Scope
+    var a = 10;
+    let b = 20;
+    const c = 30; // global
+
+    function f1() {
+        var d = 40; // function
+        e = 50;     // global 
+        console.log('f1 starts...')
+        console.log(`a is: ${a}`)
+        console.log(`b is: ${b}`)
+        console.log(`c is: ${c}`)
+        console.log(`d is: ${d}`)
+        console.log(`e is: ${e}`)
+        console.log('f1 ends...')
+    }
+    function f2() {
+        console.log('f2 starts...')
+        console.log(`a is: ${a}`)
+        console.log(`b is: ${b}`)
+        console.log(`c is: ${c}`)
+        // console.log(`d is: ${d}`)
+        console.log(`e is: ${e}`)
+        console.log('f2 ends...')
+    }
+    f1();
+    f2();
+
+    // Note: When a variable is declared without var/let/const , that's a global variable
+</script>

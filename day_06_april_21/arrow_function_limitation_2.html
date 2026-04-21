@@ -1,0 +1,19 @@
+<body>
+    <button id="btn1">Button-1</button>
+    <button id="btn2">Button-2</button>
+    <button id="btn3">Button-3</button>
+
+    <script>
+        function changeColor() { // Regular = this : how/where the function is called
+            console.log(this);   // this = btn1 / btn2 / btn3
+            this.style.color = 'red';
+        }
+        /* let changeColor = () => { // Arrow = this : where the function is written
+            console.log(this);    // this = window
+            this.style.color = 'red';
+        } */
+        document.getElementById('btn1').addEventListener('click', changeColor)
+        document.getElementById('btn2').addEventListener('click', changeColor)
+        document.getElementById('btn3').addEventListener('click', changeColor)
+    </script>
+</body>

@@ -1,0 +1,10 @@
+<script>
+    console.log('Global a: ', a);  // undefined (Hoisting)
+    var a = 10;
+
+    function f1() {
+        console.log('Function a: ', a);  
+        a = 100;  // this is not a new variable declaration
+    }
+    f1();
+</script>

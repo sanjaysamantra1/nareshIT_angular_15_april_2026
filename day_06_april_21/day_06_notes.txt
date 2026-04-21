@@ -1,0 +1,62 @@
+==  vs ===
+
+==   Equality Operator
+     values are compared with type casting     
+
+===  Strict Equality     
+     values are compared without type casting
+
+
+
+
+functions
+=========
+Pre-Defined Functions : existing functions , we just use them
+
+User Defined Function : we write , we use
+
+
+
+
+User Defined Functions
+======================
+1. Function Declaration 
+2. Function Expression
+3. Arrow Function
+
+
+Function Declaration    vs  Function Expression
+===============================================
+1. Function Declarations are named , Function Expressions are anonymous
+1. Function Declarations are hoisted , Function Expressions are not hoisted
+
+
+
+Arrow Function 
+===============
+-Anonymous
+-Not Hoisted
+-No Function keyword
+-return keyword is optinal
+-function body is optional
+-'Arrow Functions' dont have their own 'this' binding, uses 'this' from lexical/outer context
+
+
+
+HigherOrder Function : A function that takes another function as arguement
+                       in this example map() is higherorder
+
+CallBack Function : A Function being passed as arguement    
+                    in this example  incrementBy5 is callback               
+
+    function incrementBy5(ele) {
+        return ele + 5;
+    }
+    let res = arr.map(incrementBy5);
+
+
+
+Arrow Function Limitation
+==========================
+1. Arrow Functions shouldn't be used in object literals.
+2. Arrow Functions shouldn't be used as event handlers.

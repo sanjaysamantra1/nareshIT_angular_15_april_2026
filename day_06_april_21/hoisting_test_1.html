@@ -1,0 +1,10 @@
+<script>
+    console.log('Global a: ', a);  // undefined (Hoisting)
+    var a = 10;
+
+    function f1() {
+        console.log('Function a: ', a);  // undefined
+        var a = 100;
+    }
+    f1();
+</script>

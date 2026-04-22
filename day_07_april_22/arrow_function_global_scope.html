@@ -1,0 +1,12 @@
+<script>
+    function f1() { 
+        console.log('f1...', this); // window
+    }
+
+    let f2 = () => {
+        console.log('f2...', this); // window
+    }
+
+    f1();
+    f2();
+</script>

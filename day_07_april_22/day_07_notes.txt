@@ -1,0 +1,17 @@
+Arrow Function Benefits
+=======================
+Normal Function : this - How/Where the function is called
+Arrow Function :  this - Where the function is written ( Lexical/Outer scope )
+
+
+
+Closure
+=======
+-A closure is created when an inner function 'remembers' the variables from its outer function
+even after the outer function has finished running.
+
+-where we use closure : Counter , Encapsulation
+
+Note:
+1. outer function will never have 'closure', it's only for inner functions
+2. if inner function is not accessing any variable from outer function, closure will not be created for inner function

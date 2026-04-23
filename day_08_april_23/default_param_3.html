@@ -1,0 +1,17 @@
+<script>
+    function calculateTotal(price, taxRate = 0.18, discount = 0) {
+        const taxAmount = price * taxRate;
+        const discountAmount = price * discount;
+        const total = price + taxAmount - discount;
+        return {
+            price,
+            taxAmount,
+            discountAmount,
+            total
+        }
+    }
+
+    console.log(calculateTotal(80000));
+    console.log(calculateTotal(500, 0.28));
+    console.log(calculateTotal(15000, 0.15, 0.05));
+</script>

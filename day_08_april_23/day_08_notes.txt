@@ -1,0 +1,28 @@
+Javascript : Programming Language, Follows ECMAScript Standards
+ECMA : European Computer Menufecturer Association
+ECMAScript : Set of standards
+
+ES_5    <=  June 2015
+ES_6    2015 ( const, let, class, extends, module, arrow, Map, Set )
+ES_7    2016
+ES_8    2017
+ES_9    2018
+ES_10   2019
+ES_11   2020
+ES_12   2021
+ES_13   2022
+ES_14   2023
+ES_15   2024
+ES_16   2025
+
+
+New features After ES_6
+=======================
+1. Template Literal / String Interpolation
+2. let & const
+3. Arrow Function
+4. Exponent Operator
+5. Optional Chaining ?.
+6. Default Parameter Value
+7. REST param  ...
+8. Spread Operator  ...

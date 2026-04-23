@@ -1,0 +1,25 @@
+<script>
+    // var doesn't support block scope, let/const support block scope
+    function varTest() {
+        if (true) {
+            var courseName = 'Angular';
+            console.log('Inside Block courseName: ', courseName)
+        }
+        console.log('Outside Block courseName: ', courseName)
+    }
+    varTest();
+    // As courseName is declared inside if() block, ideally 'courseName' should be accesible only inside the block and not outside the block
+    // as var doesn't support block scope, its visible even outside the block
+
+
+    function letTest() {
+        if (true) {
+            let trainerName = 'Sanjay Kumar';
+            console.log('Inside Block trainerName: ', trainerName)
+        }
+        console.log('Outside Block trainerName: ', trainerName); // trainerName is not defined
+    }
+    letTest();
+
+    // when a let variable is declared inside a block, we cannot use it outside the block
+</script>

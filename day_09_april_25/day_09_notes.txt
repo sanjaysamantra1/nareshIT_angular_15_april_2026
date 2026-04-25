@@ -49,3 +49,11 @@ map  vs  object
 -in object key should be of string datatype , map key can be of any datatype.
 -there is no inbuilt method to check size of an object, map has size attribute.
 -Map iteration is faster than object iteration
+
+
+
+Assignments
+============
+1. Ask user to enter 2 number ( prompt ) perform addition,subtraction, multiplication 
+2. ask user to enter a number, check if that number is prime or not
+3. create a counter example with increment,decrement,reset option using closure

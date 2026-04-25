@@ -1,0 +1,31 @@
+<script>
+    let cars = new Set();
+
+    console.log('cars: ', cars);
+
+    // Add Items to set
+    cars.add('Tata')
+    cars.add('Honda')
+    cars.add('Maruti')
+    cars.add('Maruti')
+    cars.add('Honda')
+    cars.add('Honda')
+    console.log('cars: ', cars);
+
+    // check size
+    console.log('car size: ', cars.size);
+
+    // check if a value is present
+    console.log(cars.has('Tata'));
+    console.log(cars.has('Toyota'));
+
+
+    // Delete an item
+    cars.delete('Maruti');
+    console.log('cars after delete: ', cars);
+
+    // Delete All 
+    cars.clear();
+
+    console.log('cars after clear: ', cars);
+</script>

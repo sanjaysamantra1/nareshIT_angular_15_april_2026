@@ -1,0 +1,35 @@
+<script>
+    let userMap = new Map();
+
+    // add data to a map
+    userMap.set('name', 'sanjay');
+    userMap.set('age', 50);
+    userMap.set('address', { city: 'Bangalore', 'state': 'Karnataka', pincode: 123456 });
+    userMap.set('role', 'Trainer');
+    userMap.set('cars', ['Tata', 'Honda', 'Maruti']);
+
+    // to print the whole map
+    console.log('user Map: ', userMap)
+
+    // get a value
+    let role_value = userMap.get('role');
+    console.log('Role: ', role_value)
+
+    // check the size
+    console.log('size: ', userMap.size)
+
+    // check if a key is present?
+    console.log(userMap.has('role')); // role key is present - true
+    console.log(userMap.has('dob')); // role key is present - false
+
+    // delete 1 item
+    userMap.delete('age');
+
+    // usermap after delete
+    console.log('usermap after delete ', userMap)
+
+    // delete all the key-values
+    userMap.clear();
+
+    console.log('usermap after clear ', userMap)
+</script>

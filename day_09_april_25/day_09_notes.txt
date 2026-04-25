@@ -1,0 +1,51 @@
+New features After ES_6
+=======================
+1. Template Literal / String Interpolation
+2. let & const
+3. Arrow Function
+4. Exponent Operator
+5. Optional Chaining ?.
+6. Default Parameter Value
+7. REST param  ...
+8. Spread Operator  ...
+
+9. de-structuring ( Object , Array )
+10. for-in & for-of loop
+11. Enhanced Object Literal
+12. Set
+13. Map
+
+
+
+Set
+===
+-A Set is a javascript object that stores unique values.
+-set can be iterated using loop,forEach()
+-Set Properties:
+    No Duplicate values
+    Maintains insertions Order
+    can store values of any datatype
+    No Indexing
+-When to use Set:
+    Remove Duplicate values easily
+    Fast Lookup(find element) O(1)
+
+
+Map
+===
+-Map is a collection that stores data in key-value format
+-Map Properties: 
+    keys can be of any datatype, values can be of any datatype
+    keys are unique
+    insertion order is preserved
+-Why do we need Map
+    -when keys are not String
+    -for dynamic key-value data
+    -faster
+
+
+map  vs  object
+================
+-in object key should be of string datatype , map key can be of any datatype.
+-there is no inbuilt method to check size of an object, map has size attribute.
+-Map iteration is faster than object iteration

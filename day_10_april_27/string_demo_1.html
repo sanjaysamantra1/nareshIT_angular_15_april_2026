@@ -1,0 +1,16 @@
+<script>
+    let str1 = 'NareshIT';
+    let str2 = 'NareshIT';
+
+    let str3 = new String('NareshIT');
+    let str4 = new String('NareshIT');
+
+    console.log(str1 == str2); // true
+    console.log(str2 == str3); // true
+
+    console.log(str3 == str4); // false
+    // Both str3 & str4 are objects, address comparision returns false
+
+    console.log(typeof str1); // string
+    console.log(typeof str3); // object
+</script>

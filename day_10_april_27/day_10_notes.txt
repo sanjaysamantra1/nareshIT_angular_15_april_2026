@@ -1,0 +1,36 @@
+Strings
+=======
+-String Objects can be created in 2 ways
+    1. String Literal     ex: let str1 = 'hello'
+    2. String Object      ex: let str2 = new String('hello')
+
+
+String methods:
+--------------
+length;
+toUpperCase();
+toLowerCase();
+charAt();
+at()
+charCodeAt();
+concat();
+indexOf();
+lastIndexOf();
+includes();
+startsWith()
+endsWith()
+match();
+matchAll()   // returns iterator
+replace();
+replaceAll();
+repeat();
+slice(start, end)
+substring(start, end)
+substr(start, length)
+split()
+search(regex)
+trim()
+eval(); (eval() is from Window Object)
+localeCompare()
+
+N.p:- substring() cannot accept negative indexes. slice() does.

@@ -1,0 +1,11 @@
+<script>
+    let str = 'entertainment';
+
+    // First Non-repeated char
+    for (char of str) {
+        if (str.indexOf(char) == str.lastIndexOf(char)) {
+            console.log('Non repeated Char: ', char);
+            break;
+        }
+    }
+</script>

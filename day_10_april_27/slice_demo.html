@@ -1,0 +1,13 @@
+<script>
+    let str = 'This is Javascript class';
+
+    console.log(str.slice(5)); // start=5
+    console.log(str.substring(5)); // start=5
+
+    console.log(str.slice(8, 12)); // start=8, end=12 
+    console.log(str.substring(8, 12)); // start=8, end=12 
+
+    // substring() cannot accept negative indexes. slice() does.
+    console.log(str.substring(-5))
+    console.log(str.slice(-5))
+</script>

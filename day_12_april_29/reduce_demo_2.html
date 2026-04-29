@@ -1,0 +1,14 @@
+<script>
+    let arr = [10, 20, 30, 40, 50, 10, 30, 50];
+    // print which element is repeated how many times
+
+    let result = arr.reduce((obj, ele) => {
+        if (obj[ele]) {
+            obj[ele] = obj[ele] + 1;
+        } else {
+            obj[ele] = 1;
+        }
+        return obj;
+    }, {});
+    console.log(result)
+</script>

@@ -1,0 +1,20 @@
+<script>
+    const arr = [10, 20];
+    arr.push(30);   // add new item - yes
+    delete arr[1];  // delete - yes
+    arr[0] = 15;    // update - yes
+    console.log(arr);  //  [15, empty, 30]
+
+    // Declaring an array using 'const' doesn't add all these restrictions
+    // Object.freeze() adds all these restrictions
+
+    let numArr = [10, 20]
+    Object.freeze(numArr);
+    // numArr.push(30);   // add new item - No, error
+    delete numArr[1];  // delete - No
+    numArr[0] = 15;    // update - No
+    console.log(numArr);  //  [10,20]
+
+    // Mutable - modifiable
+    // ImMutable - not modifiable
+</script>

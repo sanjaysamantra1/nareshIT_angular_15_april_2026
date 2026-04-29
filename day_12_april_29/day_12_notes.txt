@@ -1,0 +1,51 @@
+Array Methods
+=============
+reduce()
+flat()
+
+every()  returns true only if all the elements satisfies the condition
+some()    returns true if atleast 1 element satisfies the condition
+
+
+Array Mutability & Immutability
+===============================
+    const arr = [10, 20];
+    arr.push(30);   // add new item - yes
+    delete arr[1];  // delete - yes
+    arr[0] = 15;    // update - yes
+    console.log(arr);  //  [15, empty, 30]
+
+    // Declaring an array using 'const' doesn't add all these restrictions
+    // Object.freeze() adds all these restrictions
+
+    let numArr = [10, 20]
+    Object.freeze(numArr);
+    // numArr.push(30);   // add new item - No, error
+    delete numArr[1];  // delete - No
+    numArr[0] = 15;    // update - No
+    console.log(numArr);  //  [10,20]
+
+    // Mutable - modifiable
+    // ImMutable - not modifiable
+
+
+
+
+
+
+Array Copy
+==========
+let arr1 = [10, 20];
+let arr2 = arr1;  // address/reference copy ( Not value copy)
+-A new array is not being created, rather same address is being assigned to arr2
+-Both arr1 & arr2 are holding the same address
+
+let arr1 = [10, 20, [30, 31]];
+let arr2 = [...arr1]; // value copy - shallow copy
+
+let arr3 = [10, 20, [30, 31]];
+let arr4 = structuredClone(arr3); // value copy - Deep Copy
+
+-A shallow copy of an array is a copy whose nested elements share the same references.
+ (Nested arrays will not be copied by value)
+-A deep copy of an array is a copy whose nested elements do not share the same references.

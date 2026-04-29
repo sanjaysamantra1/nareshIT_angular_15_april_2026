@@ -1,0 +1,26 @@
+<script>
+    let arr1 = [10, 20];
+
+    let arr2 = arr1;  // Reference Copy / Address Copy
+    // a new array is not being created , both arr1 & arr2 are pointing to the same array
+    arr1.push(30);
+    arr2.push(40);
+    console.log('arr1: ', arr1);
+    console.log('arr2: ', arr2);
+
+    // Shallow Copy - copy by value - Spread Operator(...)
+    let arr3 = [10, 20, [30, 31]];
+    let arr4 = [...arr3]; // Shallow Copy
+    arr4.push(40, 50);   // only arr4 will have 40,50 , array3 wont have 40,50
+    arr4[2].push(32, 33); // 32,33 will be there in both arr3 and arr4
+    console.log('arr3: ', arr3);
+    console.log('arr4: ', arr4);
+
+    // Deep Copy - copy by value - structuredClone
+    let arr5 = [10, 20, [30, 31]];
+    let arr6 = structuredClone(arr5) // Deep Copy
+    arr6.push(40, 50);   // only arr6 will have 40,50 , array5 wont have 40,50
+    arr6[2].push(32, 33); // only arr6 will have 32,33 , array5 wont have 32,33
+    console.log('arr5: ', arr5);
+    console.log('arr6: ', arr6);
+</script>

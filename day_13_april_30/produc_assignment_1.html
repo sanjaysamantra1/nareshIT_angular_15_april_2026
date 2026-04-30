@@ -1,0 +1,13 @@
+<script>
+    let products = [
+        { pId: 201, name: 'laptop', price: 55000, category: 'electronics', inStock: true },
+        { pId: 203, name: 'shirt', price: 1200, category: 'clothing', inStock: false },
+        { pId: 202, name: 'phone', price: 30000, category: 'electronics', inStock: true },
+        { pId: 205, name: 'shoes', price: 3500, category: 'clothing', inStock: true },
+        { pId: 204, name: 'tablet', price: 25000, category: 'electronics', inStock: false }
+    ];
+    let updatedProducts = products.map(product => {
+        return { ...product, discountedPrice: product.price * 0.1 }
+    });
+    console.log(updatedProducts);
+</script>

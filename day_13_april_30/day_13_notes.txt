@@ -1,0 +1,31 @@
+Event loop
+==========
+Heap : Area where variables are stored
+Stack/CallStack : maintains a Stack of normal functions, calls the functions 1 by 1 from the top
+
+Note: Regular functions can be added to callstack directly, but callback functions cannot be added to callstack directly, they have to wait in queue
+
+MicroTask :  callbacks from promise() , async functions 
+Macrotask : callbacks from setTimeOut() , setInterval() 
+
+Event Loop: checks callstack and callback queue
+            brings functions from callback ques and gives them to callstack for execution
+
+
+To debug how code gets executed:
+https://www.jsv9000.app/
+
+
+
+
+Promise 
+=======
+-an object whose value is not known now, but will be available in future
+-A promise can have 3 states:
+    a. pending 
+    b. resolved
+    c. rejected
+
+-How do we get data from promise    
+    a. then()
+    b. await 

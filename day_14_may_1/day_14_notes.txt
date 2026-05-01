@@ -1,0 +1,47 @@
+TypeScript
+==========
+-TypeScript is a strongly typed, object oriented, compiled language. 
+-TypeScript is both a language and a set of tools. 
+-TypeScript is a typed superset of JavaScript compiled to JavaScript. 
+-TypeScript is JavaScript plus some additional features.
+
+
+	Javascript					TypeScript
+---------------------------------------------------------
+1.strongly typed-No				1.strongly typed-yes
+2.directly run on browser		2.not directly run on the browser
+3.classes, interfaces, 			3.classes,interfaces,inheritance,generics
+inheritance, generics-No
+4.optional parameters-No		4.optional parameters-yes
+5.interpreted language			5.compiles the code
+6.errors at runtime				6.errors during the development time
+7.modules-no					7.modules-yes
+8.generics-no					8.generics-yes
+
+
+Environment Setup
+==================
+-The TypeScript compiler is itself a .ts file compiled down to JavaScript (.js) file. 
+-The TSC (TypeScript Compiler) is a source-to-source compiler (transcompiler / transpiler).
+-TypeScript Compiler(TSC generates a JavaScript version of the .ts file passed to it. 
+-TSC produces an equivalent JavaScript source code from the Typescript file given as an input to it. 
+ This process is termed as transpilation.
+-compiler rejects any raw JavaScript file passed to it.compiler deals with only .ts files.
+
+1. download Nodejs and install
+   https://nodejs.org/en/download/
+
+2. check nodejs is installed 
+   node -v (in command prompt)
+   
+3. install Typescript
+   npm install -g typescript
+   
+4. create a TS file(abc.ts), compile the file using the below command, and expect a JS file
+   tsc abc.ts (abc.js will be generated)
+   node abc.js 
+   
+   abc.ts --> tsc abc.ts --> abc.js
+   
+Note − Multiple files can be compiled at once. 
+	   tsc file1.ts, file2.ts, file3.ts

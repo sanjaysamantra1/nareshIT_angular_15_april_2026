@@ -1,0 +1,20 @@
+<script>
+    function add(a, b) { // Normal function
+        console.log(a + b);
+    }
+    add(10, 20);
+
+
+    // ES_5 Class
+    function Trainer(id, name, course, branch) { // constructor
+        this.id = id;
+        this.name = name;
+        this.course = course;
+        this.branch = branch;
+    }
+    let trainer1 = new Trainer(101, 'Sanjay Kumar', 'Angular', 'Ameerpet');
+    console.log(trainer1);
+
+    let trainer2 = new Trainer(102, 'HariKrishna Sir', 'Core Java', 'KPHB');
+    console.log(trainer2);
+</script>
